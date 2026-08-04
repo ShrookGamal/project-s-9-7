@@ -433,7 +433,7 @@ body.en .mobile-nav-links a.active { padding-right: 0; padding-left: 15px; borde
         left: 0;
     }
     .glass-nav {
-    width: 90%;
+    width: 95%;
     
 }
 }
@@ -1314,4 +1314,55 @@ body.en .step-modern-card:hover { transform: translateX(-15px); }
 
 @media (max-width: 768px) {
     .footer-grid-container { grid-template-columns: 1fr; text-align: center; }
+}
+@media (max-width: 480px) {
+    .wa-btn-pro {
+        font-size: 1rem !important;
+        padding: 15px 20px !important;
+        width: 100% !important;
+        border-radius: 15px !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        line-height: 1.4;
+    }
+
+    .back-btn-modern {
+        top: 15px !important;
+        right: 15px !important;
+        padding: 8px 15px !important;
+        font-size: 0.85rem !important;
+    }
+
+    .pro-details-nav {
+        padding: 0 15px !important;
+        height: 65px !important;
+    }
+
+    .details-main-title {
+        font-size: 1.6rem !important;
+        margin-bottom: 20px !important;
+    }
+
+    .details-main-content {
+        padding: 30px 20px !important;
+        margin-top: -60px !important;
+    }
+}
+
+.side-menu {
+    background: #325358 !important;
+}
+
+.side-menu .mobile-nav-links a {
+    color: #ffffff !important;
+}
+
+.glass-nav.scrolled .menu-toggle span {
+    background: #325358 !important;
+}
+
+.side-menu .close-btn {
+    color: #ffffff !important;
 }
