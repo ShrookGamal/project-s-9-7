@@ -147,3 +147,22 @@ function toggleLuxuryActive(element) {
     element.classList.add(activeClass);
     if (!isServiceCard) element.style.background = 'rgba(255, 255, 255, 0.4)';
 }
+const track = document.getElementById('marquee-track');
+if (track) {
+    const items = track.innerHTML;
+    track.innerHTML = items + items + items;
+}
+
+const langBtn = document.getElementById('lang-switcher');
+if (langBtn) {
+    langBtn.addEventListener('click', () => {
+        setTimeout(() => {
+            const isEn = document.documentElement.lang === 'en';
+            if (track) {
+                track.style.animation = 'none';
+                track.offsetHeight; 
+                track.style.animation = isEn ? 'scrollLTR 25s linear infinite' : 'scrollRTL 25s linear infinite';
+            }
+        }, 50);
+    });
+}
